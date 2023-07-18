@@ -1,0 +1,46 @@
+@import 'Colors';
+
+.section{
+    padding-top: 15rem;
+
+   > div{
+        max-width: 48rem;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+        >h3{
+             width: 80%;
+             font: 300 50px $heading;
+             text-align: center;
+         }
+         >p{
+           font-size: 15px;
+           font-family: $text;
+           line-height: 1.9;
+   
+            text-align: center;
+         }
+         >button{
+            font-size: 14px;
+            font-family: 600;
+            font-family: $text;
+            border: none;
+            transform-origin: bottom;
+            transition: transform 0.5s;
+            padding: 0.9rem 1.25rem;
+            // cursor: pointer;
+            letter-spacing: 2px;
+            border-radius: 7px;
+         
+            &:hover{
+                transform: skewY(-10deg);
+            }
+         }
+         img{
+            // margin-left: 6rem;
+         }
+    }
+}
